@@ -8,4 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class user extends Model
 {
     use HasFactory;
-}
+
+    protected $fillable = [
+        'id',
+        'name',
+        'password',
+        'age',
+        'favorite_store',
+    ];
+
+//     public function store(){
+//         return $this->hasOne(`App\Models\Store`);
+//     }
+ }
+
+
