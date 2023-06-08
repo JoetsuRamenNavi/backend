@@ -14,5 +14,15 @@
 
 ### 実行
 
-- `php artisan migrate`でDB作成
+- `php artisan migrate --seed`でDB作成&テストデータインサート
 - `php artisan serve`でサイトの起動
+
+### ルーティング
+
+```
+/api/users      全件取得
+/api/stores     全権取得
+/api/articles   全権取得
+/api/articles/1 1のデータ取得
+/api/articles   POSTで送られたデータをインサート
+```
