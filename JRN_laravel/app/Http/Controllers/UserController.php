@@ -19,9 +19,7 @@ class UserController extends Controller
 
         $allusers = User::all();
         // $allusers = User::find(1)->store;
-        return response()->json(
-            $allusers
-        );
+        return $this->jsonResponse($allusers);
     }
 
     /**
