@@ -38,7 +38,8 @@ class StoreController extends Controller
      */
     public function show($id)
     {
-        //
+        $storeshow = Store::where('store_id',$id)->get();
+        return $this->jsonResponse($storeshow);
     }
 
     /**

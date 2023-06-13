@@ -24,6 +24,7 @@
 /api/stores     全権取得
 /api/articles   全権取得
 /api/articles/1 1のデータ取得
+/api/stores/1   1のデータ取得
 /api/articles   POSTで送られたデータをインサート
 /api/users      POSTで送られたデータをインサート
 ```
