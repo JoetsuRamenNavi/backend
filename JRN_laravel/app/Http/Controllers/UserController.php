@@ -30,7 +30,16 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User;
+        $user->id = 0;
+        $user->name = $request->name;
+        $user->password = $request->password;
+        $user->age = $request->age;
+        $user->favorite_store = $request->favorite_store;
+        //timestampの無効
+        $user->timestamps = false;
+
+        $user->save();
     }
 
     /**
