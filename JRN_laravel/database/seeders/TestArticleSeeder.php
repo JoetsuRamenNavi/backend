@@ -20,6 +20,7 @@ class TestArticleSeeder extends Seeder
             'title'=>'食べてきました',
             'date'=>'2023/06/01',
             'post'=>'美味しかったです',
+            'lunch_flag'=>true,
             'store_id'=>'1',
         ],
         [
@@ -27,6 +28,7 @@ class TestArticleSeeder extends Seeder
             'title'=>'食べてきました',
             'date'=>'2023/06/01',
             'post'=>'美味しかったです',
+            'lunch_flag'=>true,
             'store_id'=>'2',
         ],
         [
@@ -34,6 +36,7 @@ class TestArticleSeeder extends Seeder
             'title'=>'食べてきました',
             'date'=>'2023/06/01',
             'post'=>'美味しかったです',
+            'lunch_flag'=>true,
             'store_id'=>'3',
         ],
         [
@@ -41,6 +44,7 @@ class TestArticleSeeder extends Seeder
             'title'=>'食べてきました',
             'date'=>'2023/06/01',
             'post'=>'美味しかったです',
+            'lunch_flag'=>true,
             'store_id'=>'4',
         ],
         [
@@ -48,6 +52,7 @@ class TestArticleSeeder extends Seeder
             'title'=>'食べてきました',
             'date'=>'2023/06/01',
             'post'=>'美味しかったです',
+            'lunch_flag'=>true,
             'store_id'=>'5',
         ],
         [
@@ -55,6 +60,7 @@ class TestArticleSeeder extends Seeder
             'title'=>'また食べてきました',
             'date'=>'2023/06/05',
             'post'=>'また美味しかったです',
+            'lunch_flag'=>true,
             'store_id'=>'1',
         ],
         [
@@ -62,6 +68,7 @@ class TestArticleSeeder extends Seeder
             'title'=>'また食べてきました',
             'date'=>'2023/06/05',
             'post'=>'また美味しかったです',
+            'lunch_flag'=>true,
             'store_id'=>'2',
         ],
         [
@@ -69,6 +76,7 @@ class TestArticleSeeder extends Seeder
             'title'=>'またまた食べてきました',
             'date'=>'2023/06/05',
             'post'=>'またまた美味しかったです',
+            'lunch_flag'=>true,
             'store_id'=>'1',
         ],
     ]);

@@ -13,6 +13,7 @@ class article extends Model
         'title',
         'date',
         'post',
+        'lunch_flag',
         'store_id',
     ];
 }

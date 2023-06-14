@@ -17,8 +17,7 @@ return new class extends Migration
             $table->integer('store_id')->unsigned()->nullable(false)->unique()->primary();
             $table->string('store_name')->nullable(false);
             $table->text('description');
-            $table->string('soup',20);
-            $table->string('men',20);
+            $table->boolean('sake_flag');
             $table->text('comment');
             $table->integer('star_up');
             $table->integer('ranking')->default(0);

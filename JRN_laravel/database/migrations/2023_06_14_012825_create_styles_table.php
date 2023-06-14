@@ -13,12 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function (Blueprint $table) {
+        Schema::create('styles', function (Blueprint $table) {
             $table->increments('id')->unsigned()->nullable(false);
-            $table->string('title',20)->nullable(false);
-            $table->string('date',20);
-            $table->string('post',400);
-            $table->boolean('lunch_flag');
+            $table->string('style',20)->nullable(false);
             $table->unsignedInteger('store_id');
             $table->foreign('store_id')->references('store_id')->on('stores')->onDelete('cascade');
         });
@@ -31,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles');
+        Schema::dropIfExists('styles');
     }
 };
