@@ -34,6 +34,7 @@ class ArticleController extends Controller
         $article->post = $request->post;
         $article->store_id = $request->store_id;
         //timestampの無効
+        //lunch_flag入れる？？
         $article->timestamps = false;
 
         $article->save();
