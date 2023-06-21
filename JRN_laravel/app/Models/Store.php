@@ -12,10 +12,11 @@ class store extends Model
         'store_id',
         'store_name',
         'description',
-        'sake_flag',
-        'comment',
         'star_up',
         'ranking',
+        'tell',
+        'address',
+        'manager',
         'id',
     ];
 }

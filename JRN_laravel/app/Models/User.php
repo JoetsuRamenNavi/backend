@@ -14,7 +14,6 @@ class user extends Model
         'name',
         'password',
         'age',
-        'favorite_store',
     ];
 
 //     public function store(){
