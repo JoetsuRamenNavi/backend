@@ -14,8 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::create('user_votes', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id')->unsigned()->nullable(false);
+            $table->string('battle_name',50)->nullable(false);
+            $table->string('battle_term',20)->nullable(false);
             $table->timestamps();
+            $table->unsignedInteger('id');
+            $table->foreign('id')->references('id')->on('users')->onDelete('cascade');
+            $table->unsignedInteger('join_id');
+            $table->foreign('join_id')->references('join_id')->on('store')->onDelete('cascade');
         });
     }
 
