@@ -5,18 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class store extends Model
+class Join_store extends Model
 {
     use HasFactory;
+
     protected $fillable = [
+        'join_id',
+        'battle_name',
+        'battle_term',
+        'ramen_name',
+        'ramen_price',
         'store_id',
-        'store_name',
-        'description',
-        'star_up',
-        'ranking',
-        'tell',
-        'address',
-        'manager',
-        'id',
     ];
 }

@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('password',300)->nullable(false);
             $table->string('mail',20)->nullable(false);
             $table->integer('age');
-            $table->integer('favorite_store');
         });
     }
 

@@ -17,10 +17,11 @@ return new class extends Migration
             $table->integer('store_id')->unsigned()->nullable(false)->unique()->primary();
             $table->string('store_name')->nullable(false);
             $table->text('description');
-            $table->boolean('sake_flag');
-            $table->text('comment');
             $table->integer('star_up');
             $table->integer('ranking')->default(0);
+            $table->string('tel',20)->nullable(false);
+            $table->string('address',50)->nullable(false);
+            $table->string('manager',50)->nullable(false);
             $table->unsignedInteger('id');
             $table->foreign('id')->references('id')->on('users')->onDelete('cascade');
         });

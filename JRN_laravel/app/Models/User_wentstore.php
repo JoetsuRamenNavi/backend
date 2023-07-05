@@ -5,20 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class user extends Model
+class User_wentstore extends Model
 {
     use HasFactory;
 
     protected $fillable = [
+        'went_id',
+        'created_at',
+        'updated_at',
         'id',
-        'name',
-        'password',
-        'age',
+        'store_id',
     ];
-
-//     public function store(){
-//         return $this->hasOne(`App\Models\Store`);
-//     }
- }
-
-
+}
