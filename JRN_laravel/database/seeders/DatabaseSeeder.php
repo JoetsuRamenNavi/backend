@@ -23,7 +23,13 @@ class DatabaseSeeder extends Seeder
         $this->call([
             TestUserSeeder::class,
             TestStoreSeeder::class,
-            TestArticleSeeder::class
+            TestArticleSeeder::class,
+            TestSoupSeeder::class,
+            TestMenSeeder::class,
+            TestStyleSeeder::class,
+            TestUserWentstoreSeeder::class,
+            TestJoinStoreSeeder::class,
+            TestUserVotesSeeder::class
         ]);
     }
 }

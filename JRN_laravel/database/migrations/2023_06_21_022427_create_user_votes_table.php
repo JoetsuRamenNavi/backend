@@ -21,7 +21,7 @@ return new class extends Migration
             $table->unsignedInteger('id');
             $table->foreign('id')->references('id')->on('users')->onDelete('cascade');
             $table->unsignedInteger('join_id');
-            $table->foreign('join_id')->references('join_id')->on('store')->onDelete('cascade');
+            $table->foreign('join_id')->references('join_id')->on('join_stores')->onDelete('cascade');
         });
     }
 
