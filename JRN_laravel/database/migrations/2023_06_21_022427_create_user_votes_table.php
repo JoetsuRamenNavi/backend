@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('user_votes', function (Blueprint $table) {
-            $table->increments('id')->unsigned()->nullable(false);
+            $table->increments('votes_id')->unsigned()->nullable(false);
             $table->string('battle_name',50)->nullable(false);
             $table->string('battle_term',20)->nullable(false);
             $table->timestamps();
