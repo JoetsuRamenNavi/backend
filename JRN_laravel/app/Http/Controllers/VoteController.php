@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 use App\Models\Store;
-use App\Models\Article;
+use App\Models\Vote;
 
-class ArticleController extends Controller
+class VoteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $allarticle = Article::All();
-        return $this->jsonResponse($allarticle);
+        $allvotes = Vote::all();
+        return $this->jsonResponse($allvotes);
     }
 
     /**
@@ -27,18 +28,7 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        $article = new Article;
-        $article->id = 0;
-        $article->title = $request->title;
-        $article->date = $request->date;
-        $article->post = $request->post;
-        $article->store_id = $request->store_id;
-        //timestampの無効
-        //lunch_flag入れる？？
-        $article->timestamps = false;
-
-        $article->save();
-
+        //
     }
 
     /**
@@ -49,9 +39,7 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        $articleshow = Article::where('store_id',$id)->orderBy('date','desc')->get();
-        //return $this->jsonResponse($articleshow);
-        return $this->jsonResponse($articleshow);
+        //
     }
 
     /**

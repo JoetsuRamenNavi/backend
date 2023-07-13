@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('soups', function (Blueprint $table) {
-            $table->increments('id')->unsigned()->nullable(false);
-            $table->string('soup',10)->nullable(false);
+        Schema::create('votes', function (Blueprint $table) {
+            $table->increments('votes_id')->unsigned()->nullable(false);
+            $table->string('battle_term',20)->nullable(false);
+            $table->integer('vote')->nullable(false)->default(0);
             $table->unsignedInteger('store_id');
             $table->foreign('store_id')->references('store_id')->on('stores')->onDelete('cascade');
         });
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('soups');
+        Schema::dropIfExists('user_votes');
     }
 };

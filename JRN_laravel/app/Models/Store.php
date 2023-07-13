@@ -11,12 +11,13 @@ class store extends Model
     protected $fillable = [
         'store_id',
         'store_name',
-        'description',
-        'star_up',
-        'ranking',
         'tell',
         'address',
-        'manager',
+        'store_url',
+        'image',
+        'entry_item',
+        'entry_price',
+        'entry_comment',
         'id',
     ];
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Store;
+use App\Models\Vote;
 
 
 class UserController extends Controller
@@ -32,10 +33,9 @@ class UserController extends Controller
     {
         $user = new User;
         $user->id = 0;
-        $user->name = $request->name;
+        $user->nickname = $request->nickname;
         $user->password = $request->password;
-        $user->age = $request->age;
-        $user->favorite_store = $request->favorite_store;
+        $user->mail = $request->mail;
         //timestampの無効
         $user->timestamps = false;
 

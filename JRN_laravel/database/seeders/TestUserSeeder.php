@@ -23,10 +23,9 @@ class TestUserSeeder extends Seeder
 
         for ($i = 1; $i <= 100; $i++) {
             $testData[] = [
-                'name' => $faker->name,
+                'nickname' => $faker->name,
                 'password' => Hash::make('password' . $i),
                 'mail' => $faker->unique()->safeEmail,
-                'age' => rand(18, 60),
             ];
         }
 
