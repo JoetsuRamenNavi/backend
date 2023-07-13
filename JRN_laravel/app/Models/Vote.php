@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User_wentstore extends Model
+class vote extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'went_id',
-        'created_at',
-        'updated_at',
-        'id',
+        'votes_id',
         'store_id',
+        'battle_term',
+        'vote',
     ];
 }

@@ -11,9 +11,9 @@ class user extends Model
 
     protected $fillable = [
         'id',
-        'name',
+        'nickname',
         'password',
-        'age',
+        'mail',
     ];
 
 //     public function store(){
